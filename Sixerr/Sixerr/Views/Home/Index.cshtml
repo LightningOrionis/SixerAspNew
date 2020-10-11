@@ -1,0 +1,25 @@
+﻿@model IAsyncEnumerable<Sixerr.Models.Gig>
+
+@{
+    ViewData["Title"] = "Sixerr";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <img src="~/img/banner.gif" class="banner">
+    </div>
+</div>
+
+@await foreach (var item in Model)
+{
+    <div class="col-lg-3">
+        <div class="thumbnail">
+            <a href="#"><img src="GIG:PHOTO"></a>
+            <div class="caption">
+                @Html.ActionLink(item.Title, "Detail", "Gig", new { id = item.Id }, null)
+                <p><span> Исполнитель: <a href="#"> USER USERNAME </a></span> <b class="green pull-right"> $@item.Price </b></p>
+            </div>
+        </div>
+    </div>
+}

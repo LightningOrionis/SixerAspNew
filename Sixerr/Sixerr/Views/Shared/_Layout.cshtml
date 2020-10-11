@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sixerr</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img src="LOGO" height="23">
+                    </a>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Найти услуги">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--If authenticated-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="USER:AVATAR"
+                                 class="img-circle" width=22 height=22 />
+                            USER:NAME <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Создать услугу </a></li>
+                            <li><a href="#"> Мои услуги </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"> Logout </a></li>
+                        </ul>
+                    </li>
+                    <!--else-->
+                </ul>
+            </div>
+        </div>
+        <div id="category">
+            <div class="contain">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Графика и дизайн</a></li>
+                    <li><a href="">Маркетинг</a> </li>
+                    <li><a href=""> Видеообработка </a></li>
+                    <li><a href="">Музыка и Аудио </a> </li>
+                    <li><a href=""> ИТ </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <span>
+                Sixerr App &copy; 2020
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

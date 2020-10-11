@@ -1,0 +1,36 @@
+﻿body {
+    padding-top: 80px;
+}
+
+.container {
+    width: 100vw;
+}
+
+#body {
+    background-color: #f7f7f7;
+}
+
+#footer {
+    padding: 20px, 0px;
+}
+
+a {
+    color: #323232;
+}
+
+a:hover {
+    color: #0bb536;
+}
+
+#category a {
+    padding: 5px, 15px;
+}
+
+#body .banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.green {
+    color: #0bb536;
+}
