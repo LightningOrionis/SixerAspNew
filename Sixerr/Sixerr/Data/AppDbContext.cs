@@ -16,5 +16,6 @@ namespace Sixerr.Data
 
         public DbSet<Gig> Gigs { get; set; }
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Review> Reviews { get; set; }
     }
 }

@@ -28,23 +28,22 @@
                 <div class="panel-heading">
                     <h4> Отзывы: </h4>
                     <ul class="list-group">
-                        {% for i in '123' %}
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="{% static 'img/avatar.png'%}" class="img-circle center-block" height="60" width="60">
+                        @foreach(var review in (List<Review>)ViewData["reviews"])
+                        {
+                            <li class="list-group-item">
+                                <div class="row">                                    
+                                    <div class="col-md-10">
+                                        <h4><b> <!--review.Author.User.UserName--> Username</b> </h4>
+                                        <p> @review.Text </p>
+                                    </div>
                                 </div>
-                                <div class="col-md-10">
-                                    <h5> Какой-то покупатель </h5>
-                                    <p> Какой-то отзыв об услуге</p>
-                                </div>
-                            </div>
                         </li>
-                        {% endfor %}
+                        }
                     </ul>
                 </div>
             </div>
         </div>
+        <!--div for new comment-->
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">

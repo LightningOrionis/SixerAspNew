@@ -85,6 +85,29 @@ namespace Sixerr.Models
                         }
                     );
                 }
+                if(!context.Reviews.Any())
+                {
+                    context.Reviews.AddRange(
+                        new Review
+                        {
+                            Author = context.Profiles.Find(1u),
+                            Gig = context.Gigs.Find(1u),
+                            Text = "11"
+                        },   
+                        new Review
+                        {
+                            Author = context.Profiles.Find(1u),
+                            Gig = context.Gigs.Find(2u),
+                            Text = "12"
+                        },
+                        new Review
+                        {
+                            Author = context.Profiles.Find(2u),
+                            Gig = context.Gigs.Find(2u),
+                            Text = "22"
+                        }
+                    );
+                }
 
                 context.SaveChanges();
             }

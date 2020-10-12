@@ -40,6 +40,9 @@ namespace Sixerr.Controllers
                 return NotFound();
             }
 
+            var reviews = await _context.Reviews.Where(review => review.Gig.Id == gig.Id).ToListAsync();
+            ViewData["reviews"] = reviews;
+
             return View(gig);
         }
 
@@ -58,6 +61,7 @@ namespace Sixerr.Controllers
         {
             if (ModelState.IsValid)
             {
+                gig.Id = 1 + (uint)_context.Gigs.Count();
                 _context.Add(gig);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
