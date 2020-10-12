@@ -9,7 +9,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts")
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -35,8 +35,9 @@
                             USER:NAME <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"> Создать услугу </a></li>
-                            <li><a href="#"> Мои услуги </a></li>
+                            <li>@Html.ActionLink("Мой профиль", "MyProfile", "Profiles")</li>
+                            <li>@Html.ActionLink("Создать услугу", "Create", "Gigs")</li>
+                            <li>@Html.ActionLink("Мои услуги", "MyGigs", "Profiles")</li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#"> Logout </a></li>
                         </ul>

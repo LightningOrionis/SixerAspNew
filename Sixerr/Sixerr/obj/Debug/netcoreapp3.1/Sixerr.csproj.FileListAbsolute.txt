@@ -75,8 +75,6 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.pdb
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.genruntimeconfig.cache
-C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profile\MyGigs.cshtml.g.cs
-C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Profile.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -177,3 +175,5 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Details.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Edit.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Index.cshtml.g.cs
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profiles\MyGigs.cshtml.g.cs
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profiles\MyProfile.cshtml.g.cs

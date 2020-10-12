@@ -1,0 +1,37 @@
+﻿@model List<Sixerr.Models.Gig>
+
+@{
+    ViewData["Title"] = "Sixerr";
+}
+
+<h3 style="margin: 30px, 0px;"> Мои услуги </h3>
+<div class="panel panel-default">
+    <table class="table table-bordered table-striped">
+        <thead class="bg-success">
+            <tr>
+                <th> № </th>
+                <th> Название </th>
+                <th> Цена </th>
+                <th> Статус </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var gig in Model)
+             {
+            <tr>
+                <th> @gig.Id </th>
+                <th> @Html.ActionLink(gig.Title, "Detail", "Gigs", new { id = gig.Id }) </th>
+                <th> $@gig.Price</th>
+                @if (gig.Status)
+                {
+                    <th>Активен</th>
+                }
+                else 
+                {
+                 <th>Не активен</th> 
+                }
+            </tr>
+             }
+        </tbody>
+    </table>
+</div>

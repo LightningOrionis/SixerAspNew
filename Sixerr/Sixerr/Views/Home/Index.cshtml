@@ -1,4 +1,4 @@
-﻿@model IAsyncEnumerable<Sixerr.Models.Gig>
+﻿@model List<Sixerr.Models.Gig>
 
 @{
     ViewData["Title"] = "Sixerr";
@@ -11,7 +11,7 @@
     </div>
 </div>
 
-@await foreach (var item in Model)
+@foreach (var item in Model)
 {
     <div class="col-lg-3">
         <div class="thumbnail">

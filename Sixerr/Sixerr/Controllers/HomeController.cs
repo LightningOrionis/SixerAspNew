@@ -22,9 +22,9 @@ namespace Sixerr.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var gigs = _context.Gigs.AsAsyncEnumerable();
+            var gigs = await _context.Gigs.ToListAsync();
             return View(gigs);
         }
     }
