@@ -2,7 +2,6 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\appsett
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Sixerr.exe
-C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.csprojAssemblyReference.cache
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.AssemblyInfoInputs.cache
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.AssemblyInfo.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.RazorAssemblyInfo.cache
@@ -186,3 +185,4 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\MimeKit
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.csproj.CoreCompileInputs.cache
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.csprojAssemblyReference.cache

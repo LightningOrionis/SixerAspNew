@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +16,12 @@ namespace Sixerr.Controllers
     public class GigsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public GigsController(AppDbContext context)
+        public GigsController(AppDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Gigs
@@ -57,16 +62,29 @@ namespace Sixerr.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,Price,Photo,Status,CreateTime,Category")] Gig gig)
+        public async Task<IActionResult> Create([Bind("Title,Description,Price,GigImage,Status,Category")] GigViewModel gigViewModel)
         {
+            string uniqueFileName = UploadedFile(gigViewModel);
             if (ModelState.IsValid)
             {
-                gig.Id = 1 + (uint)_context.Gigs.Count();
+                Gig gig = new Gig
+                {
+                    Id = 1 + (uint)_context.Gigs.Count(),
+                    CreateTime = DateTime.Now,
+                    Title = gigViewModel.Title,
+                    Category = gigViewModel.Category,
+                    Status = gigViewModel.Status,
+                    Description = gigViewModel.Description,
+                    Price = gigViewModel.Price,
+                    User = _context.Profiles.Find(1u),
+                    Photo = uniqueFileName
+                };
+               
                 _context.Add(gig);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(gig);
+            return View(gigViewModel);
         }
 
         // GET: Gigs/Edit/5
@@ -90,7 +108,7 @@ namespace Sixerr.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(uint id, [Bind("Id,Title,Description,Price,Photo,Status,CreateTime,Category")] Gig gig)
+        public async Task<IActionResult> Edit(uint id, [Bind("Title,Description,Price,Photo,Status,Category")] Gig gig)
         {
             if (id != gig.Id)
             {
@@ -152,6 +170,23 @@ namespace Sixerr.Controllers
         private bool GigExists(uint id)
         {
             return _context.Gigs.Any(e => e.Id == id);
+        }
+
+        private string UploadedFile(GigViewModel model)
+        {
+            string uniqueFileName = null;
+
+            if (model.GigImage != null)
+            {
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.GigImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.GigImage.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model Sixerr.Models.Gig
+﻿@model Sixerr.Models.GigViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form enctype="multipart/form-data" method="post" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
@@ -28,9 +28,9 @@
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Photo" class="control-label"></label>
-                <input asp-for="Photo" class="form-control" />
-                <span asp-validation-for="Photo" class="text-danger"></span>
+                <label asp-for="GigImage" class="control-label"></label>
+                <input asp-for="GigImage" class="custom-file-input" id="customFile">
+                <span asp-validation-for="GigImage" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <div class="checkbox">
@@ -38,11 +38,6 @@
                         <input asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
                     </label>
                 </div>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreateTime" class="control-label"></label>
-                <input asp-for="CreateTime" class="form-control" />
-                <span asp-validation-for="CreateTime" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Category" class="control-label"></label>
