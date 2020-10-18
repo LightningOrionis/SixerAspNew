@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Sixerr.Data;
 using Sixerr.Models;
+using Sixerr.Services;
 
 namespace Sixerr.Controllers
 {
