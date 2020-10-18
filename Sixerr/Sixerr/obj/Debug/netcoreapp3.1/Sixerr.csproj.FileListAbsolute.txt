@@ -168,8 +168,6 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\ru\Micr
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.csproj.CoreCompileInputs.cache
-C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Create.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Delete.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Gigs\Details.cshtml.g.cs
@@ -179,3 +177,9 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profiles\MyProfile.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Reviews\Create.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Reviews\Delete.cshtml.g.cs
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.csproj.CoreCompileInputs.cache
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.MvcApplicationPartsAssemblyInfo.cache

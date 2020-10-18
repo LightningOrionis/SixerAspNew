@@ -19,6 +19,7 @@ namespace Sixerr.Controllers
 
         public async Task<IActionResult> MyProfile()
         {
+            throw new Exception();
             var profile = await _context.Profiles.FindAsync(1u); // current user!!!
             return View(profile);
         }
