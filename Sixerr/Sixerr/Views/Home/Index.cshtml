@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <img src="~/img/banner.gif" class="banner">
+        <img src="~/img/banner.gif" class="banner" style="width:100%;">
     </div>
 </div>
 
@@ -15,7 +15,7 @@
 {
     <div class="col-lg-3">
         <div class="thumbnail">
-            <a href="@Url.Action("Details", "Gigs", new { Id = item.Id })"><img src="~/images/@item.Photo"></a>
+            <a href="@Url.Action("Details", "Gigs", new { Id = item.Id })"><img src="~/images/@item.Photo" height="100"></a>
             <div class="caption">
                 @Html.ActionLink(item.Title, "Details", "Gigs", new { id = item.Id }, null)
                 <p><span> Исполнитель: <a href="#"> USER USERNAME </a></span> <b class="green pull-right"> $@item.Price </b></p>
