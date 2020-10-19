@@ -17,11 +17,13 @@ namespace Sixerr.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly UserManager<IdentityUser> userManager;
 
-        public GigsController(AppDbContext context, IWebHostEnvironment webHostEnvironment)
+        public GigsController(AppDbContext context, IWebHostEnvironment webHostEnvironment, UserManager<IdentityUser> userManager)
         {
             _context = context;
             _webHostEnvironment = webHostEnvironment;
+            this.userManager = userManager;
         }
 
         // GET: Gigs
@@ -76,8 +78,8 @@ namespace Sixerr.Controllers
                     Status = gigViewModel.Status,
                     Description = gigViewModel.Description,
                     Price = gigViewModel.Price,
-                    User = _context.Profiles.Find(1u),
-                    Photo = uniqueFileName
+                    Photo = uniqueFileName,
+                    User = _context.Profiles.First(p => p.User.Id == userManager.GetUserId(HttpContext.User))
                 };
                
                 _context.Add(gig);
