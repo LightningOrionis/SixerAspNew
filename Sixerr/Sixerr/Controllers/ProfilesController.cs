@@ -41,7 +41,11 @@ namespace Sixerr.Controllers
 
         public async Task<IActionResult> Details(uint id)
         {
-            var p = await _context.Profiles.FindAsync(id);
+            var p =  _context.Profiles
+                .Include(p => p.User)
+                .First(p => p.Id == id);
+            var gigs = await _context.Gigs.Where(g => g.User == p).ToListAsync();
+            ViewBag.gigs = gigs;
             return View(p);
         }
     }

@@ -1,0 +1,36 @@
+2020-10-23 02:12:06.0733||DEBUG|Sixerr.Program|init main 
+2020-10-23 02:12:06.3906||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 02:12:06.3906||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 02:12:06.3906||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 02:13:50.4211||DEBUG|Sixerr.Program|init main 
+2020-10-23 02:13:50.7504||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 02:13:50.7504||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 02:13:50.7504||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 02:14:10.6018||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 88d6bc2c-b554-4292-8ed1-bda413e98197. 
+2020-10-23 02:14:10.6018|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 88d6bc2c-b554-4292-8ed1-bda413e98197 failed to provide the correct password. 
+2020-10-23 02:15:28.7475||DEBUG|Sixerr.Program|init main 
+2020-10-23 02:15:29.0720||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 02:15:29.0720||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 02:15:29.0825||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 02:16:46.7405||DEBUG|Sixerr.Program|init main 
+2020-10-23 02:16:47.1533||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 02:16:47.1609||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 02:16:47.1609||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 02:16:48.9185|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Exception: Exception of type 'System.Exception' was thrown.
+   at Sixerr.Controllers.HomeController.Index() in C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\Controllers\HomeController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

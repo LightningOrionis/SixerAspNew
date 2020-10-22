@@ -1,7 +1,41 @@
-﻿@*
+﻿@model Profile
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
-<h1> Detail profile</h1>
+<h1> @Model.User.UserName</h1>
+
+<h3> О пользователе: </h3>
+<h4> @Model.About </h4>
+
+<h3> Услуги пользователя: </h3>
+<table class="table table-bordered table-striped">
+    <thead class="bg-success">
+        <tr>
+            <th> № </th>
+            <th> Название </th>
+            <th> Цена </th>
+            <th> Статус </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var gig in (List<Gig>)ViewBag.gigs)
+        {
+            <tr>
+                <th> @gig.Id </th>
+                <th> @Html.ActionLink(gig.Title, "Details", "Gigs", new { id = gig.Id }) </th>
+                <th> $@gig.Price</th>
+                @if (gig.Status)
+                {
+                    <th>Активен</th>
+                }
+                else
+                {
+                    <th>Не активен</th>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
