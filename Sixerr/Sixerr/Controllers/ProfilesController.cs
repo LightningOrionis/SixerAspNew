@@ -34,15 +34,15 @@ namespace Sixerr.Controllers
         public async Task<IActionResult> MyGigs()
         {
             var current_user = await userManager.GetUserAsync(HttpContext.User);
-            var p = _context.Profiles.First(p => p.User == current_user);           
+            var p = _context.Profiles
+                            .First(p => p.User == current_user);           
             var my_gigs = await _context.Gigs.Where(gig => gig.User.Id == p.Id).ToListAsync();
             return View(my_gigs);
         }
 
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(uint id)
         {
-            var user = _identityContext.Users.Find(id);
-            var p = _context.Profiles.First(p => p.User == user);
+            var p = await _context.Profiles.FindAsync(id);
             return View(p);
         }
     }

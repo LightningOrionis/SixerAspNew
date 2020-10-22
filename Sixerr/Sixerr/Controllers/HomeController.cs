@@ -21,12 +21,16 @@ namespace Sixerr.Controllers
         {
             _logger = logger;
             _context = context;
+            
         }
 
         public async Task<IActionResult> Index()
         {
-            var gigs = await _context.Gigs.ToListAsync();
+            var gigs = await _context.Gigs
+                                    .Include(c => c.User)
+                                    .Include(c => c.User.User)
+                                    .ToListAsync();
             return View(gigs);
-        }
+        }       
     }
 }

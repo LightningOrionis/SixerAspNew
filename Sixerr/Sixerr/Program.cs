@@ -18,12 +18,6 @@ namespace Sixerr
         {
             var host = CreateHostBuilder(args).Build();
             var logConfigFile = "nlog.config";
-
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;                
-                SeedData.Initialize(services);            
-            }
             var logger = NLogBuilder.ConfigureNLog(logConfigFile).GetCurrentClassLogger();
             try
             {
