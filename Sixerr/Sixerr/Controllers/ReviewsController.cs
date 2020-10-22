@@ -41,10 +41,5 @@ namespace Sixerr.Controllers
             _context.SaveChanges();
             return RedirectToAction("Details", "Gigs", new { id = gid });
         }
-
-        public IActionResult Delete()
-        {
-            return View();
-        }
     }
 }
