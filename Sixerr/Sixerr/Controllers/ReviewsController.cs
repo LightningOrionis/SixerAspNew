@@ -37,7 +37,9 @@ namespace Sixerr.Controllers
                 Gig = _context.Gigs.Find(id),
                 Text = model.Text
             };
-            return View();
+            _context.Reviews.Add(r);
+            _context.SaveChanges();
+            return RedirectToAction("Details", "Gigs", new { id = id });
         }
 
         public IActionResult Delete()

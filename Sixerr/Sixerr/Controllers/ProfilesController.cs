@@ -14,29 +14,28 @@ namespace Sixerr.Controllers
     public class ProfilesController : Controller
     {
         private AppDbContext _context;
-        private MyIdentityDbContext _identityContext;
         private readonly UserManager<IdentityUser> userManager;
 
-        public ProfilesController(AppDbContext context, UserManager<IdentityUser> userManager, MyIdentityDbContext identityContext)
+        public ProfilesController(AppDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
             this.userManager = userManager;
-            _identityContext = identityContext;
         }
 
-        public async Task<IActionResult> MyProfile()
+        public IActionResult MyProfile()
         {
-            var current_user = await userManager.GetUserAsync(HttpContext.User);
-            var p = _context.Profiles.First(p => p.User == current_user);
-            return View(p);
+            uint id_ = _context.Profiles
+                .First(p => p.User.Id == userManager.GetUserId(HttpContext.User)).Id;
+            return RedirectToAction("Details", new { id = id_ });
         }
 
         public async Task<IActionResult> MyGigs()
         {
             var current_user = await userManager.GetUserAsync(HttpContext.User);
             var p = _context.Profiles
-                            .First(p => p.User == current_user);           
-            var my_gigs = await _context.Gigs.Where(gig => gig.User.Id == p.Id).ToListAsync();
+                .First(p => p.User == current_user);           
+            var my_gigs = await _context.Gigs
+                .Where(gig => gig.User.Id == p.Id).ToListAsync();
             return View(my_gigs);
         }
 

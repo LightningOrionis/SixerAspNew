@@ -25,6 +25,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4> Отзывы: </h4>
+                    @Html.ActionLink("Создать комментарий", "Create", "Reviews", new { id = Model.Id }, null)"
                     <ul class="list-group">
                         @foreach (var review in (List<Review>)ViewData["reviews"])
                         {

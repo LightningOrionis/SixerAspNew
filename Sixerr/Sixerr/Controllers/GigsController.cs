@@ -44,6 +44,7 @@ namespace Sixerr.Controllers
                 .Include(c => c.User)
                 .Include(c => c.User.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (gig == null)
             {
                 return NotFound();
@@ -52,7 +53,8 @@ namespace Sixerr.Controllers
             var reviews = await _context.Reviews
                 .Include(c => c.Author)
                 .Include(c => c.Gig)
-                .Where(review => review.Gig.Id == gig.Id).ToListAsync();
+                .Where(review => review.Gig.Id == gig.Id)
+                .ToListAsync();
             ViewData["reviews"] = reviews;
 
             return View(gig);
