@@ -22,24 +22,24 @@ namespace Sixerr.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create(uint id)
+        public IActionResult Create(uint gid)
         {
+            ViewBag.gid = gid;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(uint id, ReviewViewModel model)
+        public IActionResult Create(uint gid, ReviewViewModel model)
         {
             var r = new Review
             {
-                Id = _context.Reviews.Count() + 1,
                 Author = _context.Profiles.First(p => p.User.Id == userManager.GetUserId(HttpContext.User)),
-                Gig = _context.Gigs.Find(id),
+                Gig = _context.Gigs.Find(gid),
                 Text = model.Text
             };
             _context.Reviews.Add(r);
             _context.SaveChanges();
-            return RedirectToAction("Details", "Gigs", new { id = id });
+            return RedirectToAction("Details", "Gigs", new { id = gid });
         }
 
         public IActionResult Delete()

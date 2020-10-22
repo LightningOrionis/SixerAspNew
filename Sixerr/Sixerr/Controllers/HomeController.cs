@@ -27,9 +27,10 @@ namespace Sixerr.Controllers
         public async Task<IActionResult> Index()
         {
             var gigs = await _context.Gigs
-                                    .Include(c => c.User)
-                                    .Include(c => c.User.User)
-                                    .ToListAsync();
+                            .Include(g => g.User)
+                            .Include(g => g.User.User)
+                            .Where(g => g.Status)
+                            .ToListAsync();
             return View(gigs);
         }       
     }

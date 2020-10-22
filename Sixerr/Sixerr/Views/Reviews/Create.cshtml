@@ -11,5 +11,7 @@
         <label asp-for="Text"></label>
         <input asp-for="Text" type="text"  />
     </div>
-    <button type="submit"> Создать </button>
+    <input type="number" name="gid" value="@ViewBag.gid" hidden="hidden"
+           width="100" height="500"/>
+    <button type="submit" > Создать </button>
 </form>

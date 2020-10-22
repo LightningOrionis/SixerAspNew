@@ -20,7 +20,7 @@
              {
             <tr>
                 <th> @gig.Id </th>
-                <th> @Html.ActionLink(gig.Title, "Detail", "Gigs", new { id = gig.Id }) </th>
+                <th> @Html.ActionLink(gig.Title, "Details", "Gigs", new { id = gig.Id }) </th>
                 <th> $@gig.Price</th>
                 @if (gig.Status)
                 {
