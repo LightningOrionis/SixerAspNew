@@ -1,12 +1,11 @@
 ﻿@model Sixerr.ViewModels.LoginViewModel
-
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
     ViewBag.Title = "Войти";
 }
-
+<h1> Войти в аккаунт</h1>
 <div class="row" style="margin-top:30px;">
     <div class="col-md-12">
         <form method="post">
@@ -24,10 +23,14 @@
             <div class="form-group">
                 <div class="custom-checkbox">
                     <label asp-for="RememberMe"></label>
-                    <input asp-for="RememberMe" class="form-control"/>
+                    <input asp-for="RememberMe" class="form-control" />
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Войти</button>
         </form>
     </div>
+</div>
+<div style="margin-bottom: 60px; padding-top: 20px;">
+    <h4> Нет аккаунта? </h4>
+    @Html.ActionLink("Зарегистрироваться", "Register")
 </div>

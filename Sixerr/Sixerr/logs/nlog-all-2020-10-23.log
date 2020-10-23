@@ -1,8 +1,13 @@
-2020-10-23 02:48:07.5640||DEBUG|Sixerr.Program|init main 
-2020-10-23 02:48:07.8794||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-2020-10-23 02:48:07.8794||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-2020-10-23 02:48:07.8911||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
-2020-10-23 02:48:11.3614|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ArgumentException: Value does not fall within the expected range.
+2020-10-23 03:08:38.3714||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2020-10-23 03:09:14.1086||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:09:14.4865||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:09:14.4865||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:09:14.4865||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:11:23.8318||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:11:24.1343||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:11:24.1343||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:11:24.1448||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:11:25.8808|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ArgumentException: Value does not fall within the expected range.
    at Sixerr.Controllers.HomeController.Index() in C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\Controllers\HomeController.cs:line 33
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -20,63 +25,31 @@
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-10-23 02:48:30.8888||DEBUG|Sixerr.Program|init main 
-2020-10-23 02:48:31.2000||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-2020-10-23 02:48:31.2038||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-2020-10-23 02:48:31.2038||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
-2020-10-23 02:48:42.0566||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 88d6bc2c-b554-4292-8ed1-bda413e98197. 
-2020-10-23 02:48:42.0566|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 88d6bc2c-b554-4292-8ed1-bda413e98197 failed to provide the correct password. 
-2020-10-23 02:51:43.8981||DEBUG|Sixerr.Program|init main 
-2020-10-23 02:51:44.2169||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-2020-10-23 02:51:44.2205||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-2020-10-23 02:51:44.2205||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
-2020-10-23 02:51:56.8626|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Sequence contains no elements
-   at System.Linq.ThrowHelper.ThrowNoElementsException()
-   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
-   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
-   at Sixerr.Controllers.ProfilesController.Details(UInt32 id) in C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\Controllers\ProfilesController.cs:line 44
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-10-23 02:52:20.9526|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Sequence contains no elements
-   at System.Linq.ThrowHelper.ThrowNoElementsException()
-   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
-   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
-   at Sixerr.Controllers.ProfilesController.Details(UInt32 id) in C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\Controllers\ProfilesController.cs:line 44
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-23 03:17:14.8877||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:17:15.1925||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:17:15.1925||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:17:15.2028||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:18:40.3949||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:18:40.7178||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:18:40.7215||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:18:40.7215||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:19:44.2261||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:19:44.5609||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:19:44.5647||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:19:44.5647||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:20:31.8195||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:20:32.1303||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:20:32.1303||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:20:32.1410||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:21:27.0575||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:21:27.3651||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:21:27.3651||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:21:27.3750||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:21:59.6639||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:21:59.9725||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:21:59.9725||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:21:59.9725||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-10-23 03:22:50.5820||DEBUG|Sixerr.Program|init main 
+2020-10-23 03:22:50.8961||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-10-23 03:22:50.8961||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-10-23 03:22:50.9066||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 

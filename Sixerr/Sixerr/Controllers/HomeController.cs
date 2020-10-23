@@ -30,6 +30,7 @@ namespace Sixerr.Controllers
                             .Include(g => g.User.User)
                             .Where(g => g.Status)
                             .ToListAsync();
+            // throw new ArgumentException();
             return View(gigs);
         }       
     }
