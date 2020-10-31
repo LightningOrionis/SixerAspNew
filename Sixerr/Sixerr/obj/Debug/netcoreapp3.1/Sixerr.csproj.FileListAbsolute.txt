@@ -190,3 +190,4 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profiles\Details.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\web.config
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\appsettings.Production.json

@@ -1,4 +1,4 @@
-2020-10-23 03:11:25.8808|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ArgumentException: Value does not fall within the expected range.
+2020-10-23 03:35:16.6631|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ArgumentException: Value does not fall within the expected range.
    at Sixerr.Controllers.HomeController.Index() in C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\Controllers\HomeController.cs:line 33
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)

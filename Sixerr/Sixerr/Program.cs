@@ -14,8 +14,11 @@ namespace Sixerr
 {
     public class Program
     {
+        static string CurrentEnviroment = "";
         public static void Main(string[] args)
         {
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            CurrentEnviroment = config.GetSection("Environment").Value;
             var host = CreateHostBuilder(args).Build();
             var logConfigFile = "nlog.config";
             var logger = NLogBuilder.ConfigureNLog(logConfigFile).GetCurrentClassLogger();
@@ -37,6 +40,11 @@ namespace Sixerr
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((a, config) =>
+                {
+                    config.AddJsonFile("appsettings.json");
+                    config.AddJsonFile($"appsettings.{CurrentEnviroment}.json");
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
