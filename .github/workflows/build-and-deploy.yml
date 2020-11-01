@@ -20,7 +20,7 @@ jobs:
         dotnet-version: 3.1.301
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore ./Sixerr/Sixerr/Sixerr.csproj
     
     - name: Build
       run: dotnet build --no-restore -c Release
