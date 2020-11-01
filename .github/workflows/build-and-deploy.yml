@@ -27,9 +27,15 @@ jobs:
     - name: Publish
       run: dotnet publish ./Sixerr/Sixerr/Sixerr.csproj --no-build -c Release -o ./published
 
-    - name: 'Deploy to Azure'
+    - name: Deploy to Azure
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package:  './published'
+
+      - name: Publish Artifacts
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: webapp
+          path: './published'
