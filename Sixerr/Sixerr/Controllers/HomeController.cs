@@ -36,7 +36,7 @@ namespace Sixerr.Controllers
             //string smth = _configuration.GetSection("Smth").Value;
             //ViewBag["ConfSmth"] = _configuration.GetSection("Smth").Value;
             //ViewBag.Conf = _configuration.GetSection("Smth").Value;
-            return View();
+            return View(gigs);
         }       
     }
 }
