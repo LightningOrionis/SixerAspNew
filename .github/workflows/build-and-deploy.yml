@@ -25,7 +25,7 @@ jobs:
       run: dotnet build ./Sixerr/Sixerr/Sixerr.csproj --no-restore -c Release
     
     - name: Publish
-      run: dotnet publish ./Sixerr/Sixerr/Sixerr.csproj --no-build -c Release -o ./published
+      run: dotnet publish ./Sixerr/Sixerr/Sixerr.csproj --no-build -c Release -o ./../../Sixerr/Sixerr/published
 
     - name: Deploy to Azure
       uses: azure/webapps-deploy@v2
