@@ -28,15 +28,15 @@ namespace Sixerr.Controllers
 
         public async Task<IActionResult> Index()
         {
-           /* var gigs = await _context.Gigs
+            var gigs = await _context.Gigs
                             .Include(g => g.User)
                             .Include(g => g.User.User)
                             .Where(g => g.Status)
                             .ToListAsync();
             //string smth = _configuration.GetSection("Smth").Value;
             //ViewBag["ConfSmth"] = _configuration.GetSection("Smth").Value;
-            ViewBag.Conf = _configuration.GetSection("Smth").Value;*/
-            return View();
+            //ViewBag.Conf = _configuration.GetSection("Smth").Value;
+            return View(gigs);
         }       
     }
 }
