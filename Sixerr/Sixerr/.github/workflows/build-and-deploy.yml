@@ -16,27 +16,26 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.302
+        dotnet-version: 3.1.301
 
     - name: Restore
-      run: dotnet restore ./Sixerr/Sixerr/Sixerr.csproj
+      run: dotnet restore 
     
     - name: Build
-      run: dotnet build ./Sixerr/Sixerr/Sixerr.csproj --no-restore -c Release
+      run: dotnet build --no-restore -c Release
     
     - name: Publish
-      run: dotnet publish ./Sixerr/Sixerr/Sixerr.csproj --no-build -c Release -o ./../../Sixerr/Sixerr/published
+      run: dotnet publish --no-build -c Release -o ./published
 
     - name: Deploy to Azure
       uses: azure/webapps-deploy@v2
       with:
         app-name: sixerr-app
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        slot-name: 'production'
-        package:  './../../Sixerr/Sixerr/published'
+        package:  './published'
 
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
       with:
         name: webapp
-        path: './../../Sixerr/Sixerr/published'
+        path: './published'
