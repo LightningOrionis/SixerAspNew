@@ -17,14 +17,17 @@ namespace Sixerr.Controllers
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
         private readonly AppDbContext _context;
+        private readonly EmailService _email;
 
         public AccountController(AppDbContext context,
                                  UserManager<IdentityUser> userManager,
-                                 SignInManager<IdentityUser> signInManager)
+                                 SignInManager<IdentityUser> signInManager,
+                                 EmailService email)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             _context = context;
+            _email = email;
         }
         [HttpGet]
         public IActionResult Register()
@@ -55,8 +58,7 @@ namespace Sixerr.Controllers
                     var profiles = await _context.Profiles.ToListAsync();
                     _context.Profiles.Add(p);
                     await _context.SaveChangesAsync();
-                    var email = new EmailService();
-                    email.Send(model.Email, "Congrats with registration", "Registration for Sixerr");
+                    _email.Send(model.Email, "Congrats with registration", "Registration for Sixerr");
                     return RedirectToAction("Index", "Home");
                 }
 
