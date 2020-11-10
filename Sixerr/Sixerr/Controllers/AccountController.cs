@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Sixerr.Data;
 using Sixerr.Models;
+using Sixerr.Services;
 using Sixerr.ViewModels;
 
 namespace Sixerr.Controllers
@@ -54,6 +55,8 @@ namespace Sixerr.Controllers
                     var profiles = await _context.Profiles.ToListAsync();
                     _context.Profiles.Add(p);
                     await _context.SaveChangesAsync();
+                    var email = new EmailService();
+                    email.Send(model.Email, "Congrats with registration", "Registration for Sixerr");
                     return RedirectToAction("Index", "Home");
                 }
 

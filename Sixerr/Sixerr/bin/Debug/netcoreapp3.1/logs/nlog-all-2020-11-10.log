@@ -26,3 +26,7 @@
 2020-11-10 06:22:28.4449||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2020-11-10 06:22:28.4518||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2020-11-10 06:22:28.4518||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 
+2020-11-10 06:29:55.0061||DEBUG|Sixerr.Program|init main 
+2020-11-10 06:29:55.3258||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-10 06:29:55.3258||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-10 06:29:55.3258||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr 

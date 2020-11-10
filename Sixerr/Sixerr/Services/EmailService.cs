@@ -10,11 +10,11 @@ namespace Sixerr.Services
     public class EmailService
     {
         //System.Net.Mail.SmtpClient
-        public void Send(string to_address, string body)
+        public void Send(string to_address, string body, string subject)
         {
             MailMessage message = new MailMessage();
             // message.IsBodyHtml = true;
-            message.From = new MailAddress("krasovsky17igor@gmail.com", "Test");
+            message.From = new MailAddress("krasovsky17igor@gmail.com", subject);
             message.To.Add(to_address);
             message.Subject = "Test";
             message.Body = body;
