@@ -29,7 +29,10 @@ namespace Sixerr.Controllers
         // GET: Gigs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Gigs.ToListAsync());
+            var list = await _context.Gigs.Include(g => g.User)
+                                          .Include(g => g.User.User)
+                                          .ToListAsync();
+            return View(list);
         }
 
         // GET: Gigs/Details/5

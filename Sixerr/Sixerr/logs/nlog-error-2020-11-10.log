@@ -1,0 +1,2 @@
+2020-11-10 04:36:45.5152|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (3,944ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [AppDbNew]; |url: https://localhost/|action: Index

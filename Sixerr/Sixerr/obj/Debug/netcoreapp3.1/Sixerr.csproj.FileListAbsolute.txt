@@ -191,3 +191,11 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Profiles\Details.cshtml.g.cs
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\web.config
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-app - Web Deploy\profile.arm.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.sixerr-app - Web Deploy1.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.sixerr-asp-app - Web Deploy.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-app - Web Deploy1\profile.arm.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\mssql1.arm.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\mssql2.arm.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\profile.arm.json

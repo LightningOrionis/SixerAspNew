@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="sixerr-app" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="sixerr-asp-app" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\kraso\\Desktop\\Study\\IGI\ 2\\Sixerr\\Sixerr\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
