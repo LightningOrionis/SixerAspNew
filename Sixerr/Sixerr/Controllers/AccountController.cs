@@ -14,8 +14,8 @@ namespace Sixerr.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly Microsoft.AspNetCore.Identity.UserManager<IdentityUser> userManager;
-        private readonly Microsoft.AspNetCore.Identity.SignInManager<IdentityUser> signInManager;
+        private readonly UserManager<IdentityUser> userManager;
+        private readonly SignInManager<IdentityUser> signInManager;
         private readonly AppDbContext _context;
 
         public AccountController(AppDbContext context,
