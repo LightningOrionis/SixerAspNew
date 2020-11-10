@@ -15,6 +15,9 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inverse">
             <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <a style="color:white; margin-top:20px;" href="@Url.Action("Index", "Home")">Home</a>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (User.Identity.IsAuthenticated)
                     {
@@ -28,7 +31,7 @@
                                 <li>@Html.ActionLink("Создать услугу", "Create", "Gigs")</li>
                                 <li>@Html.ActionLink("Мои услуги", "MyGigs", "Profiles")</li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#"> Logout </a></li>
+                                <li>@Html.ActionLink("Выйти", "Logout", "Account") </li>
                             </ul>
                         </li>
                     }
