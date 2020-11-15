@@ -199,3 +199,5 @@ C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Propert
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\mssql1.arm.json
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\mssql2.arm.json
 C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\sixerr-asp-app - Web Deploy\profile.arm.json
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Errors\Error.cshtml.g.cs
+C:\Users\kraso\Desktop\Study\IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Errors\Exception.cshtml.g.cs

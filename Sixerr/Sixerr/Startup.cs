@@ -47,8 +47,7 @@ namespace Sixerr
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseExceptionHandler("/Exception");
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -58,8 +57,8 @@ namespace Sixerr
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
-            app.UseStatusCodePages();
+
+            app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
             app.UseEndpoints(endpoints =>
             {
