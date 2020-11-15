@@ -10,7 +10,7 @@ namespace Sixerr.Controllers
 {
     public class ErrorController : Controller
     {
-        [Route("Error/{code}")]
+        [Route("/Error/{code}")]
         public IActionResult Error(int code)
         {
             ViewBag.Code = code;
@@ -18,7 +18,7 @@ namespace Sixerr.Controllers
         }
 
         [AllowAnonymous]
-        [Route("Exception")]
+        [Route("/Exception")]
         public IActionResult Exception()
         {
             var exeptionDetails = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
