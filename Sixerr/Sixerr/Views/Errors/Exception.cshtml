@@ -3,9 +3,21 @@
 *@
 @{
 }
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h3>Ошибка @ViewBag.Code!</h3>
-        <a asp-controller="Home" asp-action="Index">Нажмите сюда, чтобы вернуться на главную</a>
-    </div>
+<h3>Exception Details:</h3>
+<div class="alert alert-danger">
+    <h5>Exception Path</h5>
+    <hr />
+    <p>@ViewBag.ExceptionPath</p>
+</div>
+
+<div class="alert alert-danger">
+    <h5>Exception Message</h5>
+    <hr />
+    <p>@ViewBag.ExceptionMessage</p>
+</div>
+
+<div class="alert alert-danger">
+    <h5>Exception Stack Trace</h5>
+    <hr />
+    <p>@ViewBag.StackTrace</p>
 </div>
