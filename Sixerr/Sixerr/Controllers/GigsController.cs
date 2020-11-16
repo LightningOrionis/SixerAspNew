@@ -81,7 +81,6 @@ namespace Sixerr.Controllers
             {
                 Gig gig = new Gig
                 {
-                    Id = (uint)(1 + _context.Gigs.Count()),
                     CreateTime = DateTime.Now,
                     Title = gigViewModel.Title,
                     Category = gigViewModel.Category,
@@ -92,7 +91,7 @@ namespace Sixerr.Controllers
                     User = _context.Profiles.First(p => p.User.Id == userManager.GetUserId(HttpContext.User))
                 };
                
-                _context.Add(gig);
+                _context.Gigs.Add(gig);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -179,7 +178,7 @@ namespace Sixerr.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool GigExists(uint id)
+        private bool GigExists(long id)
         {
             return _context.Gigs.Any(e => e.Id == id);
         }

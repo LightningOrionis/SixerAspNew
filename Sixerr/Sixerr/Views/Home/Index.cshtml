@@ -10,6 +10,7 @@
     </div>
 </div>
 
+
 @foreach (var item in Model)
 {
     <div class="col-lg-3">
@@ -17,10 +18,12 @@
             <a href="@Url.Action("Details", "Gigs", new { Id = item.Id })"><img src="~/images/@item.Photo" height="200" width="100"></a>
             <div class="caption">
                 @Html.ActionLink(item.Title, "Details", "Gigs", new { id = item.Id }, null)
-                <p><span> Исполнитель: @Html.ActionLink(item.User.User.UserName, "Details", "Profiles", new { id = item.User.Id }, null)</span> 
-                <b class="green pull-right"> $ @item.Price </b></p>
+                <p>
+                    <span> Исполнитель: @Html.ActionLink(item.User.User.UserName, "Details", "Profiles", new { id = item.User.Id }, null)</span>
+                    <b class="green pull-right"> $ @item.Price </b>
+                </p>
 
-               
+
             </div>
         </div>
     </div>

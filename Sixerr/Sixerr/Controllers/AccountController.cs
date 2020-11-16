@@ -52,7 +52,6 @@ namespace Sixerr.Controllers
                     await signInManager.SignInAsync(user, false);
                     var p = new Profile
                     {
-                        Id = (uint)(1 + _context.Profiles.Count()),
                         User = user
                     };
                     var profiles = await _context.Profiles.ToListAsync();
