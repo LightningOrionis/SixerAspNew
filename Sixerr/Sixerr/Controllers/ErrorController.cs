@@ -10,6 +10,11 @@ namespace Sixerr.Controllers
 {
     public class ErrorController : Controller
     {
+        public ErrorController()
+        {
+
+        }
+
         [Route("/Error/{statusCode}")]
         public IActionResult Error(int statusCode)
         {

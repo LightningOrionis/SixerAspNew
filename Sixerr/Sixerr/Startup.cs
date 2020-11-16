@@ -41,15 +41,9 @@ namespace Sixerr
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Exception");
-                app.UseStatusCodePagesWithReExecute("/Error/{0}");
-            }
+            
+            app.UseExceptionHandler("/Exception");
+            app.UseStatusCodePagesWithReExecute("/Error/{0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
