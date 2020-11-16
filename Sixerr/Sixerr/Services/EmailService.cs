@@ -23,7 +23,7 @@ namespace Sixerr.Services
                 client.Credentials = new NetworkCredential("krasovsky17igor@gmail.com", "3091494ig");
                 client.Port = 587;
                 client.EnableSsl = true;
-
+                client.UseDefaultCredentials = false;
                 client.Send(message);
             }                    
         }
