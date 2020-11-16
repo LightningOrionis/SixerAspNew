@@ -48,7 +48,7 @@ namespace Sixerr
             else
             {
                 app.UseExceptionHandler("/Exception");
-                app.UseHsts();
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -58,7 +58,6 @@ namespace Sixerr
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
             app.UseEndpoints(endpoints =>
             {

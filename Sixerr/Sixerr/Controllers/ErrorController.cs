@@ -10,10 +10,10 @@ namespace Sixerr.Controllers
 {
     public class ErrorController : Controller
     {
-        [Route("/Error/{code}")]
-        public IActionResult Error(int code)
+        [Route("/Error/{statusCode}")]
+        public IActionResult Error(int statusCode)
         {
-            ViewBag.Code = code;
+            ViewBag.Code = statusCode;
             return View();
         }
 
