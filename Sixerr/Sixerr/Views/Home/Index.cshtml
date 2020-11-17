@@ -10,6 +10,7 @@
     </div>
 </div>
 
+@Html.ActionLink("Chat", "Chat", "Chat")
 
 @foreach (var item in Model)
 {
@@ -22,8 +23,6 @@
                     <span> Исполнитель: @Html.ActionLink(item.User.User.UserName, "Details", "Profiles", new { id = item.User.Id }, null)</span>
                     <b class="green pull-right"> $ @item.Price </b>
                 </p>
-
-
             </div>
         </div>
     </div>

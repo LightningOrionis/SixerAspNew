@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MLnIe/MmKGfh+RdrJBgTJ7L+7Q4a1cNolJp6j1W9aGD0wEV+BIZi/N+0h22qI4rpoXqQP8eEn/otCsPUGBim3Q==",
+  "dgSpecHash": "o7W1n8EE3SXhd+ORQ7NOqDEITmdpXZlUGDvlFxFQRdcaphIrJFhbSBQJgHdshrlbusqGGb+cK55nhlnJPSAOeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kraso\\.nuget\\packages\\mailkit\\2.9.0\\mailkit.2.9.0.nupkg.sha512",
+    "C:\\Users\\kraso\\.nuget\\packages\\microsoft.aspnet.signalr\\2.4.1\\microsoft.aspnet.signalr.2.4.1.nupkg.sha512",
     "C:\\Users\\kraso\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
     "C:\\Users\\kraso\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.9\\microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",
     "C:\\Users\\kraso\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

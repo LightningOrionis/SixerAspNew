@@ -36,6 +36,7 @@ namespace Sixerr
                 .AddEntityFrameworkStores<MyIdentityDbContext>();
             services.AddSingleton(Configuration);
             services.AddTransient<EmailService>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +59,6 @@ namespace Sixerr
             app.UseAuthentication();
             app.UseAuthorization();
 
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -67,6 +67,7 @@ namespace Sixerr
                 endpoints.MapControllerRoute(
                     name: "error",
                     pattern: "{controller}/{action?}/{id?}");
+                endpoints.MapHub<ChatHub>("chat/send");
             });
         }
     }

@@ -20,16 +20,6 @@ namespace Sixerr.Data
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Order> Orders { get; set; }
-    }
-
-    public class EmployeeFactory : IDesignTimeDbContextFactory<AppDbContext>
-    {
-        public AppDbContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer("your connection string");
-
-            return new AppDbContext(optionsBuilder.Options);
-        }
+        public DbSet<ChatMessage> Messages { get; set; }
     }
 }
