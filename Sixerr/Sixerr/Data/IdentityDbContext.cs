@@ -12,7 +12,7 @@ namespace Sixerr.Data
     {
         public MyIdentityDbContext(DbContextOptions<MyIdentityDbContext> options) : base(options)
         {
-            Database.EnsureCreated();
+           Database.EnsureCreated();
         }
     }
 }

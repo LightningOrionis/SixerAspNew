@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,9 +34,6 @@ namespace Sixerr.Controllers
                             .Include(g => g.User.User)
                             .Where(g => g.Status)
                             .ToListAsync();
-            //string smth = _configuration.GetSection("Smth").Value;
-            //ViewBag["ConfSmth"] = _configuration.GetSection("Smth").Value;
-            //ViewBag.Conf = _configuration.GetSection("Smth").Value;
             return View(gigs);
         }       
     }

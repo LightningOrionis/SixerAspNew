@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sixerr.Data;
+using Sixerr.Models;
 
 namespace Sixerr.Controllers
 {
@@ -17,10 +18,10 @@ namespace Sixerr.Controllers
         }
 
         [Route("chat")]
-        [Authorize]
         public IActionResult Chat()
         {
             var messages = _context.Messages.ToList();
+            messages.Reverse();
             return View(messages);
         }
     }

@@ -13,14 +13,23 @@
 </head>
 <body>
     <div id="inputForm">
-        <input type="text" id="message" />
-        <input type="button" id="sendBtn" value="Отправить" />
-        @foreach(var message in Model)
+        @if (!User.Identity.IsAuthenticated)
         {
-            <b> @message.User.UserName:</b> <p> @message.Message </p>
+            <p> Чтобы отправлять сообщения нужно войти в аккаунт</p>
         }
+        else
+        {
+            <input type="text" id="message" />
+            <input type="button" id="sendBtn" value="Отправить" />
+        }
+
     </div>
-    <div id="chatroom"></div>
+    <div id="chatroom">
+        @foreach (var message in Model)
+        {
+            <p>  <b> @message.Username:</b>  @message.Message</p>
+            }
+    </div>
     <script src="~/js/microsoft-signalr/signalr.min.js"></script>
     <script>
         const hubConnection = new signalR.HubConnectionBuilder()

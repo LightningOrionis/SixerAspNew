@@ -12,8 +12,8 @@ namespace Sixerr.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int Id { get; set; }
-        public IdentityUser User { get; set; }
+        public long Id { get; set; }
+        public string Username { get; set; }
         public string Message { get; set; }
     }
 }

@@ -21,13 +21,11 @@ namespace Sixerr.Services
             _userManager = userManager;
         }
 
-        [Authorize]
         public async Task Send(string message, string userName)
         {
-            var user = await _userManager.GetUserAsync(Context.User);
             var chatMessage = new ChatMessage
             {
-                User = user,
+                Username = userName,
                 Message = message
             };
             _context.Messages.Add(chatMessage);
