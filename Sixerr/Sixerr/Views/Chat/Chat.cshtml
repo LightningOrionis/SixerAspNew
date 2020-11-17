@@ -15,7 +15,7 @@
     <div id="inputForm">
         @if (!User.Identity.IsAuthenticated)
         {
-            <p> Чтобы отправлять сообщения нужно войти в аккаунт</p>
+            <b style="color: red; margin-bottom: 15px;"> Чтобы отправлять сообщения нужно войти в аккаунт</b>
         }
         else
         {
@@ -46,6 +46,8 @@
 
             let firstElem = document.getElementById("chatroom").firstChild;
             document.getElementById("chatroom").insertBefore(elem, firstElem);
+
+            document.getElementById("message").value = "";
 
         });
 
