@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj": {}
+    "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj": {
+    "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
+        "projectUniqueName": "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
         "projectName": "Sixerr",
-        "projectPath": "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
+        "projectPath": "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
         "packagesPath": "C:\\Users\\kraso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\obj\\",
+        "outputPath": "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

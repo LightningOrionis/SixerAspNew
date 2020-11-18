@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o7W1n8EE3SXhd+ORQ7NOqDEITmdpXZlUGDvlFxFQRdcaphIrJFhbSBQJgHdshrlbusqGGb+cK55nhlnJPSAOeA==",
+  "dgSpecHash": "81icFFQ1QlEqLFYj/G35K1CUePP3Ut9ZQ/5tJTt/HBtb09NVsv8C/i3ua6tS79PIPs88I1V9h2HOkJwF1emG+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kraso\\Desktop\\Study\\IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
+  "projectFilePath": "C:\\Users\\kraso\\Desktop\\Study\\(11 of 13) IGI 2\\Sixerr\\Sixerr\\Sixerr.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kraso\\.nuget\\packages\\mailkit\\2.9.0\\mailkit.2.9.0.nupkg.sha512",
     "C:\\Users\\kraso\\.nuget\\packages\\microsoft.aspnet.signalr\\2.4.1\\microsoft.aspnet.signalr.2.4.1.nupkg.sha512",
