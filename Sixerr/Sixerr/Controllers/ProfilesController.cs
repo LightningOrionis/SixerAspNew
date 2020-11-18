@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,7 @@ namespace Sixerr.Controllers
             this.userManager = userManager;
         }
 
+        [Authorize]
         public IActionResult MyProfile()
         {
             throw new ArgumentException();
@@ -30,6 +32,7 @@ namespace Sixerr.Controllers
             return RedirectToAction("Details", new { id = id_ });
         }
 
+        [Authorize]
         public async Task<IActionResult> MyGigs()
         {
             var current_user = await userManager.GetUserAsync(HttpContext.User);

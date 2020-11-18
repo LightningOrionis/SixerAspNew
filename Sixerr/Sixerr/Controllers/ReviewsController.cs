@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Sixerr.Data;
@@ -22,6 +23,7 @@ namespace Sixerr.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult Create(uint gid)
         {
             ViewBag.gid = gid;
@@ -29,6 +31,7 @@ namespace Sixerr.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Create(uint gid, ReviewViewModel model)
         {
             var r = new Review

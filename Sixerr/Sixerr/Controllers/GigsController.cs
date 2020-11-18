@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -64,6 +65,7 @@ namespace Sixerr.Controllers
         }
 
         // GET: Gigs/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -74,6 +76,7 @@ namespace Sixerr.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Title,Description,Price,GigImage,Status,Category")] GigViewModel gigViewModel)
         {
             string uniqueFileName = UploadedFile(gigViewModel);
@@ -99,6 +102,7 @@ namespace Sixerr.Controllers
         }
 
         // GET: Gigs/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(uint? id)
         {
             if (id == null)
@@ -107,6 +111,7 @@ namespace Sixerr.Controllers
             }
 
             var gig = await _context.Gigs.FindAsync(id);
+            
             if (gig == null)
             {
                 return NotFound();
@@ -124,6 +129,10 @@ namespace Sixerr.Controllers
             if (id != gig.Id)
             {
                 return NotFound();
+            }
+            if (gig.User.User.UserName != HttpContext.User.Identity.Name)
+            {
+                return Unauthorized();
             }
 
             if (ModelState.IsValid)
@@ -159,6 +168,10 @@ namespace Sixerr.Controllers
 
             var gig = await _context.Gigs
                 .FirstOrDefaultAsync(m => m.Id == id);
+            if (gig.User.User.UserName != HttpContext.User.Identity.Name)
+            {
+                return Unauthorized();
+            }
             if (gig == null)
             {
                 return NotFound();
@@ -173,7 +186,11 @@ namespace Sixerr.Controllers
         public async Task<IActionResult> DeleteConfirmed(uint id)
         {
             var gig = await _context.Gigs.FindAsync(id);
-            _context.Gigs.Remove(gig);
+            if (gig.User.User.UserName != HttpContext.User.Identity.Name)
+            {
+                return Unauthorized();
+            }
+            _context.Gigs.Remove(gig);            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
