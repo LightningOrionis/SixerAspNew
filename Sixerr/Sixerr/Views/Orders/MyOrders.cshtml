@@ -1,0 +1,30 @@
+﻿@model List<Sixerr.Models.Order>
+
+@{
+    ViewData["Title"] = "Sixerr";
+}
+
+<h3 style="margin: 30px, 0px;"> Мои услуги </h3>
+<div class="panel panel-default">
+    <table class="table table-bordered table-striped">
+        <thead class="bg-success">
+            <tr>
+                <th> № </th>
+                <th> Название услуги</th>
+                <th> Цена </th>
+                <th> Исполнитель </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+            <tr>
+                <th> @order.Id </th>
+                <th> @Html.ActionLink(order.Gig.Title, "Details", "Gigs", new { id = order.Gig.Id }) </th>
+                <th> $@order.Gig.Price</th>
+                <th> @order.Gig.User.User.UserName</th>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

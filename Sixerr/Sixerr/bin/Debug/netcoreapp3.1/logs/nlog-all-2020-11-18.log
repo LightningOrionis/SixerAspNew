@@ -1,0 +1,158 @@
+2020-11-18 05:58:59.1898||DEBUG|Sixerr.Program|init main 
+2020-11-18 05:58:59.6678||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 05:58:59.6678||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 05:58:59.6678||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 05:59:16.4209||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user dd0b1eb8-7adc-4770-b16a-84b4b5cd9ec5. 
+2020-11-18 05:59:16.4209|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User dd0b1eb8-7adc-4770-b16a-84b4b5cd9ec5 failed to provide the correct password. 
+2020-11-18 05:59:24.9455|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): Попытка выполнить операцию для несуществующего сетевого подключения. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FormPipeReader.ReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.FormValueProviderFactory.AddValueProviderAsync(ValueProviderFactoryContext context)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.CreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.TryCreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-18 06:03:08.2332||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 89b52954-35c7-4d7e-8c5c-1d6953b414d7. 
+2020-11-18 06:03:08.2332|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 89b52954-35c7-4d7e-8c5c-1d6953b414d7 failed to provide the correct password. 
+2020-11-18 06:11:00.4661||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:11:00.8606||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:11:00.8606||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:11:00.8711||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:13:32.6865||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:13:33.0708||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:13:33.0745||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:13:33.0745||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:28:41.2271||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:28:41.6165||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:28:41.6165||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:28:41.6261||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:29:04.7165|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[Sixerr.Models.Order]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[Sixerr.Models.Order]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-18 06:30:29.4009||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:30:29.7787||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:30:29.7787||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:30:29.7787||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:31:46.1279||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:31:46.5272||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:31:46.5272||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:31:46.5272||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:33:25.5833||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:33:25.9735||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:33:25.9735||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:33:25.9838||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:34:32.4144||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:34:32.8117||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:34:32.8117||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:34:32.8117||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:35:14.3622||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:35:14.7453||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:35:14.7502||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:35:14.7502||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:36:08.2934||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:36:08.6834||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:36:08.6870||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:36:08.6870||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:37:14.7542||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:37:15.1451||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:37:15.1451||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:37:15.1550||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:42:43.7706||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:42:44.1334||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:42:44.1370||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:42:44.1370||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:45:27.9609||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:45:28.3968||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:45:28.3968||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:45:28.4069||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:47:13.7794||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:47:14.1449||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:47:14.1449||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:47:14.1551||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:49:21.9756||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:49:22.3666||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:49:22.3707||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:49:22.3707||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:50:01.7881||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 89b52954-35c7-4d7e-8c5c-1d6953b414d7. 
+2020-11-18 06:50:01.7925|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 89b52954-35c7-4d7e-8c5c-1d6953b414d7 failed to provide the correct password. 
+2020-11-18 06:51:29.5237||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:51:29.9087||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:51:29.9087||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:51:29.9191||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:52:17.6249||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user dd0b1eb8-7adc-4770-b16a-84b4b5cd9ec5. 
+2020-11-18 06:52:17.6249|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User dd0b1eb8-7adc-4770-b16a-84b4b5cd9ec5 failed to provide the correct password. 
+2020-11-18 06:53:05.4535||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:53:05.8566||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:53:05.8566||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:53:05.8566||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:54:02.1539||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:54:02.5223||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:54:02.5223||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:54:02.5324||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:55:21.3008||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:55:21.6780||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:55:21.6780||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:55:21.6882||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:58:02.8094||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:58:03.2587||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:58:03.2634||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:58:03.2634||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:58:54.5289||DEBUG|Sixerr.Program|init main 
+2020-11-18 06:58:54.9644||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 06:58:54.9644||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 06:58:54.9644||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 
+2020-11-18 06:59:10.6225||WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 89b52954-35c7-4d7e-8c5c-1d6953b414d7. 
+2020-11-18 06:59:10.6225|2|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 89b52954-35c7-4d7e-8c5c-1d6953b414d7 failed to provide the correct password. 
+2020-11-18 07:03:01.5666||DEBUG|Sixerr.Program|init main 
+2020-11-18 07:03:01.9446||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2020-11-18 07:03:01.9446||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2020-11-18 07:03:01.9546||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr 

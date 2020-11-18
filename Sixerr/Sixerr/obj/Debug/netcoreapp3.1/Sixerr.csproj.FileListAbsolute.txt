@@ -408,3 +408,5 @@ C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp
 C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.dll
 C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.pdb
 C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Sixerr.genruntimeconfig.cache
+C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Orders\MyOrdered.cshtml.g.cs
+C:\Users\kraso\Desktop\Study\(11 of 13) IGI 2\Sixerr\Sixerr\obj\Debug\netcoreapp3.1\Razor\Views\Orders\MyOrders.cshtml.g.cs

@@ -29,8 +29,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>@Html.ActionLink("Мой профиль", "MyProfile", "Profiles")</li>
+                                <li role="separator" class="divider"></li>
                                 <li>@Html.ActionLink("Создать услугу", "Create", "Gigs")</li>
                                 <li>@Html.ActionLink("Мои услуги", "MyGigs", "Profiles")</li>
+                                <li role="separator" class="divider"></li>
+                                <li>@Html.ActionLink("Мои заказы", "MyOrders", "Orders")</li>
+                                <li>@Html.ActionLink("Заказы мне", "MyOrdered", "Orders")</li>
                                 <li role="separator" class="divider"></li>
                                 <li>@Html.ActionLink("Выйти", "Logout", "Account") </li>
                             </ul>
