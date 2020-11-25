@@ -26,6 +26,7 @@ namespace Sixerr.Controllers
         [Authorize]
         public IActionResult MyProfile()
         {
+            throw new Exception();
             long id_ = _context.Profiles
                 .First(p => p.User.Id == userManager.GetUserId(HttpContext.User)).Id;
             return RedirectToAction("Details", new { id = id_ });

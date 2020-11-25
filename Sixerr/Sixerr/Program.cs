@@ -34,7 +34,7 @@ namespace Sixerr
             }
             finally
             {
-                NLog.LogManager.Shutdown();
+                //NLog.LogManager.Shutdown();
             }
         }
 
